@@ -6,54 +6,53 @@
         <title>My Journey from Linux Novice to Arch Linux Enthusiast - My Tech Blog</title>
         <link rel="stylesheet" href="style.css">
         <style>
-        article h2 {
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #444;
-        }
 
-        article section {
-            margin-bottom: 2rem;
-        }
+            article ul {
+                background-color: #222;
+                padding: 1rem 1rem 1rem 2.5rem;
+                border-radius: 4px;
+            }
 
-        .code-block {
-            background-color: #333;
-            padding: 1rem;
-            border-left: 3px solid #E0E0E0;
-            margin: 1.5rem 0;
-        }
+            article h2 {
+                margin-top: 2em;
+                border-bottom: none;
+                position: relative;
+                padding-bottom: 0.5em;
+            }
 
-        .intro{
-            margin: 3rem 0px 0px 0px;
-        }
+            article h2::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100px;
+                height: 2px;
+                background-color: #444;
+            }
 
-        article ul {
-            background-color: #222;
-            padding: 1rem 1rem 1rem 2.5rem;
-            border-radius: 4px;
-        }
-        article h2 {
-            margin-top: 2em;
-            border-bottom: none;
-            position: relative;
-            padding-bottom: 0.5em;
-        }
+            article h2 {
+                padding-top: 1.5rem;
+            }
 
-        article h2::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100px;
-            height: 2px;
-            background-color: #444;
-        }
-        section {
-            padding: 0px 10px  0px 10px;
-            line-height: 1.8;  /* Increases line height for better readability */
+            article h1 {
+                /* margin-top: 1rem; */
+                padding-top: 1.5rem;
+                font-size: 1.8rem;
+            }
 
+            article section {
+                line-height: 1.8;
+                border-bottom: 1px solid #444;
+                padding: 0 0 20px 0;
+            }
 
-        }
+            .code-block {
+                background-color: #333;
+                padding: 1rem;
+                border-left: 3px solid #E0E0E0;
+                margin: 1.5rem 0;
+            }
+
         </style>
     </head>
     <body>
@@ -69,9 +68,9 @@
         <div class="main-content">
             <div class="container">
                 <header>
-                    <h1 style="text-align: center;">My Journey from Linux Novice to Arch Linux Enthusiast</h1>
+                    <h1 style="text-align: left;">My Journey from Linux Novice to Arch Linux Enthusiast</h1>
+                    <span class="date">Posted May 29, 2024</span>
                     <div class="meta">
-                        <span class="date">Posted May 29, 2024</span>
                         <span class="read-time">5 min read</span>
                     </div>
                 </header>
@@ -140,11 +139,10 @@
                             <p>You have the source code! The possibilities for customization and control are endless. With the ability to tailor the program's behavior to my exact needs through source code editing, you are the Master of your own System. The sky is the limit.</p>
 
                             <p>Using Arch Linux, Suckless tools and Linux has turned me into someone who's deeply interested in understanding the inner workings of Linux.</p>
-                        </section>
-
-                        <section class="conclusion">
+                            <br>
                             <p>The choice is yours: take control of your system and unlock its full potential, or let a company manipulate your experience, system or even data.</p>
                         </section>
+
                     </article>
                 </main>
             </div>

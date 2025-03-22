@@ -2,10 +2,26 @@
   --main-text-color: #E1E1E1;
 }
 
-body {
-    font-family: "Consolas", "Menlo", monospace;
+* {
+  font-family: inherit;
+}
+
+.bot-border {
+    border-bottom: 1px solid #444;
+    padding: 0px 0px 5px 0px;
+}
+
+.container{
+    margin: 10px 100px  10px 100px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+body, html {
+    font-family: 'IBM Plex Mono', Consolas, monospace !important;
     line-height: 1.6;
-    /* margin: 2em 1em; */
     background-color: #121212;
     color: var(--main-text-color);
 }
@@ -30,8 +46,8 @@ body {
 }
 
 h1 {
-    border-bottom: 1px solid var(--main-text-color);
-    padding-bottom: 0.3rem;
+    /* border-bottom: 1px solid var(--main-text-color); */
+    /* padding-bottom: 0.3rem; */
     /* margin: 2rem 0 1rem; */
 }
 
@@ -87,7 +103,7 @@ pre {
 
 .article-summary {
     padding-bottom: 1em;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #444;
 }
 
 @media (max-width: 768px) {
