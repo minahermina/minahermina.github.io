@@ -1,38 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Article Title - My Tech Blog</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Journey from Linux Novice to Arch Linux Enthusiast - My Tech Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        article h2 {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #444;
+        }
 
-    <nav class="top-nav">
-        <h1 id="name">Mina Hermina</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="articles.html">Articles</a></li>
-        </ul>
-    </nav>
+        article section {
+            margin-bottom: 2rem;
+        }
 
-    <div class="main-content">
-        <div class="container">
-            <header>
-                <h1>Sample Article Title</h1>
-                <div class="meta">
-                    <span class="date">Posted Jun 2, 2024</span>
-                    <span class="read-time">3 min read</span>
-                </div>
-            </header>
+        .code-block {
+            background-color: #333;
+            padding: 1rem;
+            border-left: 3px solid #E0E0E0;
+            margin: 1.5rem 0;
+        }
 
-            <main>
-                <article>
-                    <p>This is the full content of the first article. It provides detailed information on the topic and expands on the summary provided on the articles page.</p>
-                    <p>You can add more paragraphs, images, or other elements here to make the article more engaging.</p>
-                </article>
-            </main>
+        .intro{
+            margin: 3rem 0px 0px 0px;
+        }
+
+        article ul {
+            background-color: #222;
+            padding: 1rem 1rem 1rem 2.5rem;
+            border-radius: 4px;
+        }
+        article h2 {
+            margin-top: 2em;
+            border-bottom: none;
+            position: relative;
+            padding-bottom: 0.5em;
+        }
+
+        article h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #444;
+        }
+        section {
+            padding: 0px 10px  0px 10px;
+            line-height: 1.8;  /* Increases line height for better readability */
+
+
+        }
+        </style>
+    </head>
+    <body>
+
+        <nav class="top-nav">
+            <h1 id="name">Mina Hermina</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <div class="container">
+                <header>
+                    <h1 style="text-align: center;">My Journey from Linux Novice to Arch Linux Enthusiast</h1>
+                    <div class="meta">
+                        <span class="date">Posted Mar 22, 2025</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                </header>
+
+                <main>
+                    <article>
+                        <section class="intro">
+                            <p>Nine months ago, I knew nothing about Linux. I decided I wanted to learn what Linux is and why so many people talk about it as the ideal operating system. Finally, I used Ubuntu (the worst Linux distro ever, by the way).</p>
+                        </section>
+
+                        <section>
+                            <h2>From Distro hopping to Arch Linux</h2>
+                            <p>Ubuntu was my first foray into the world of Linux, but I soon got bitten by the distro hopping bug. So, I uninstalled Ubuntu and went searching for a distro with a stunning and flashy interface that offered a variety of desktop environments to play with, like Gnome or KDE Plasma.</p>
+
+                            <p>Ugh, something just wasn't right. Was this fancy interface really all Linux had to offer? It felt like there was this whole other side of Linux everyone was talking about, something deeper. I just didn't feel it. So, I kept exploring different distros, until I found the one that truly spoke to me: Arch Linux. Let's just say, I'm a total Arch convert now!</p>
+                        </section>
+
+                        <section>
+                            <h2>Why Arch Linux?</h2>
+                            <p>Seeing many Linux users running Arch Linux impressed me! They configure every piece of software to their specific needs. Is this level of customization even possible on any operating system? Is there a level of control like this over any existing operating system?</p>
+
+                            <p>One more thing I love about Arch Linux is its rolling release model. This means you install your system initially and then the system receives updates once they are reviewed by the maintainers (My current system can last for 100 years unless the laptop is broken into 2 halves!). Isn't this a insane advantage? There's no evil company enforcing updates to the latest version of a potentially vulnerable system.</p>
+
+                            <p>I finally installed Arch Linux, but I was surprised. I had to configure everything from scratch, even connecting to Wi-Fi, which I did through the terminal with a bunch of commands. (Luckily, I later discovered it can actually be done with just one command!). I can't even launch any GUI app. I must install a desktop environment to manage these types of GUI apps.</p>
+                        </section>
+
+                        <section>
+                            <h2>DWM and Suckless</h2>
+                            <p>After searching for a desktop environment or program to manage my GUI applications, I was drawn to dwm (dynamic window manager). Unlike the window management system used in Windows, dwm is a tiling window manager that arranges windows side-by-side and allows control entirely through keyboard shortcuts. It was made by a group of programmers called Suckless. They develop software that suck less.</p>
+
+                            <p>What I liked about dwm in particular is the control it offers, the philosophy behind it, and the fact that it's written in C.</p>
+
+                            <p>It's configured through its source code! This means that whenever you want to make a configuration change, you edit the config.h file and then compile the program. (Don't worry, compilation and installation only take about 3 seconds and takes only one command!) .</p>
+
+                            <div class="code-block">
+                                <code>make install clean  # Your dwm with its new config is compiled and installed !!</code>
+                            </div>
+
+                            <p>I thought, "What if I read the source code?" This could be a fantastic opportunity to learn C programming, understand how these projects are created, and see how these great programmers develop these masterpieces.</p>
+                        </section>
+
+                        <section>
+                            <h2>DWM source code and Xorg server</h2>
+                            <p>Despite my experience with C++, I dove into the dwm source code with limited knowledge of C's deep details.</p>
+
+                            <p>I noticed something in the source code: dwm was managing windows by communicating with something called the "Xorg server" or "X server".</p>
+
+                            <p>The X server is a program that provides the foundation for graphical user interfaces (GUIs) on Linux systems. It handles low-level tasks like drawing windows, managing the keyboard and mouse, and displaying graphics on the screen.</p>
+
+                            <p>In our case, dwm acts as the window manager, while the Xorg server handles graphics management. When dwm needs to draw a window, it sends a request to the X server specifying the desired window properties.</p>
+
+                            <p>so dwm is an X-client that sends requests to the X server.</p>
+                        </section>
+
+                        <section>
+                            <h2>Why bother with all these details?</h2>
+                            <p>Don't you realize how powerful studying the window manager has been? This seemingly simple program, with its focused purpose, has given me a deeper understanding of my system's inner workings, customization options, graphics rendering, and overall Linux usage.</p>
+
+                            <p>Studying the dwm taught me the following:</p>
+                            <ul>
+                                <li>The deep details of C programming language.</li>
+                                <li>How the X server functions and manages graphics in Linux.</li>
+                                <li>How the make utility compiles and manages multi-file projects, including the inner workings of Makefiles.</li>
+                            </ul>
+
+                            <p>You have the source code! The possibilities for customization and control are endless. With the ability to tailor the program's behavior to my exact needs through source code editing, you are the Master of your own System. The sky is the limit.</p>
+
+                            <p>Using Arch Linux, Suckless tools and Linux has turned me into someone who's deeply interested in understanding the inner workings of Linux.</p>
+                        </section>
+
+                        <section class="conclusion">
+                            <p>The choice is yours: take control of your system and unlock its full potential, or let a company manipulate your experience, system or even data.</p>
+                        </section>
+                    </article>
+                </main>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
