@@ -79,8 +79,13 @@
                             <h2>From Distro hopping to Arch Linux</h2>
                             <p>Ubuntu was my first foray into the world of Linux, but I soon got bitten by the distro hopping bug. So, I uninstalled Ubuntu and went searching for a distro with a stunning and flashy interface that offered a variety of desktop environments to play with, like Gnome or KDE Plasma.</p>
 
-                            <p>Ugh, something just wasn't right. Was this fancy interface really all Linux had to offer? It felt like there was this whole other side of Linux everyone was talking about, something deeper. I just didn't feel it. So, I kept exploring different distros, until I found the one that truly spoke to me: Arch Linux. Let's just say, I'm a total Arch convert now!</p>
-                        </section>
+                            <p>Ugh, something just wasn't right. Was this fancy interface really all Linux had to offer? It felt like there was this whole other side of Linux everyone was talking about, something deeper. I just didn't feel it. So, I kept exploring different distros, until I found the one that truly spoke to me: 
+                                <a
+                                    href="https://archlinux.org/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >Arch Linux</a>.
+                                Let's just say, I'm a total Arch convert now!</p> </section>
 
                         <section>
                             <h2>Why Arch Linux?</h2>
@@ -110,13 +115,17 @@
                             <h2>DWM source code and Xorg server</h2>
                             <p>Despite my experience with C++, I dove into the dwm source code with limited knowledge of C's deep details.</p>
 
-                            <p>I noticed something in the source code: dwm was managing windows by communicating with something called the "Xorg server" or "X server".</p>
+                            <p>I noticed something in the source code: dwm was managing windows by communicating with something called the 
+                                "<a href="https://www.x.org/releases/X11R7.6/doc/man/man1/Xserver.1.xhtml">Xorg server</a>" 
+                                or
+                                "<a href="https://www.x.org/releases/X11R7.6/doc/man/man1/Xserver.1.xhtml">Xorg server</a>".
+                            </p>
 
                             <p>The X server is a program that provides the foundation for graphical user interfaces (GUIs) on Linux systems. It handles low-level tasks like drawing windows, managing the keyboard and mouse, and displaying graphics on the screen.</p>
 
                             <p>In our case, dwm acts as the window manager, while the Xorg server handles graphics management. When dwm needs to draw a window, it sends a request to the X server specifying the desired window properties.</p>
 
-                            <p>so dwm is an X-client that sends requests to the X server.</p>
+                            <p>so dwm is an <b> X-client</b> that sends requests to the X server.</p>
                         </section>
 
                         <section>
@@ -126,8 +135,12 @@
                             <p>Studying the dwm taught me the following:</p>
                             <ul>
                                 <li>The deep details of C programming language.</li>
-                                <li>How the X server functions and manages graphics in Linux.</li>
-                                <li>How the make utility compiles and manages multi-file projects, including the inner workings of Makefiles.</li>
+                                <li>How the <b> X server </b> functions and manages graphics in Linux.</li>
+                                <li>How the 
+                                    <b> <a href="https://www.gnu.org/software/make/manual/make.html"> make</a> </b>
+                                    utility compiles and manages multi-file projects, including the inner workings of 
+                                    <a href="https://www.gnu.org/software/make/manual/make.html#Makefiles" > Makefiles</a>.
+                                </li>
                             </ul>
 
                             <p>You have the source code! The possibilities for customization and control are endless. With the ability to tailor the program's behavior to my exact needs through source code editing, you are the Master of your own System. The sky is the limit.</p>

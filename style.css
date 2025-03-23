@@ -28,10 +28,12 @@ p {
 
 a {
     color: #D2B48C; /* Change this to any color you like */
+    font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #fff; /* Change this to any color you like */
+    text-decoration: underline;
 }
 
 .top-nav {
@@ -98,7 +100,7 @@ pre {
 }
 
 .top-nav a {
-    color: var(--main-text-color);
+    /* color: var(--main-text-color); */
     text-decoration: none;
 }
 
