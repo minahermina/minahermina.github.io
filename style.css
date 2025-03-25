@@ -15,6 +15,45 @@ body, html {
     color: var(--main-text-color);
 }
 
+article ul {
+    background-color: #222;
+    padding: 1rem 1rem 1rem 2.5rem;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+article h2 {
+    margin-top: 2em;
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 0.5em;
+}
+
+article h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #444;
+}
+
+article h2 {
+    padding-top: 1.5rem;
+}
+
+article h1 {
+    padding-top: 1.5rem;
+    /* font-size: 1.8rem; */
+}
+
+article section {
+    line-height: 1.8;
+    border-bottom: 1px solid #444;
+    padding: 0 0 20px 0;
+}
+
 .bot-border {
     border-bottom: 1px solid #444;
     padding: 0px 0px 5px 0px;
@@ -116,12 +155,12 @@ pre {
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
+    .container{
+        margin: 0px 10px  0px 10px;
     }
 
-    .top-nav ul {
-        gap: 15px;
+    p {
+        font-size: 1.0rem;
     }
 }
 
