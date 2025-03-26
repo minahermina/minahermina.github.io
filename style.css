@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');
 
 :root {
-  --main-text-color: #E1E1E1;
+    --main-text-color: #E1E1E1;
+    --link-color: #D2B48C ;
 }
 
 * {
-  font-family: inherit;
+    font-family: inherit;
 }
 
 body, html {
@@ -23,8 +24,6 @@ article ul {
 }
 
 article h2 {
-    margin-top: 2em;
-    border-bottom: none;
     position: relative;
     padding-bottom: 0.5em;
 }
@@ -51,7 +50,6 @@ article h1 {
 article section {
     line-height: 1.8;
     border-bottom: 1px solid #444;
-    padding: 0 0 20px 0;
 }
 
 .bot-border {
@@ -63,12 +61,12 @@ article section {
     margin: 10px 100px  10px 100px;
 }
 
-p {
+/* p {
     font-size: 1.1rem;
-}
+} */
 
 a {
-    color: #D2B48C; /* Change this to any color you like */
+    color: var(--link-color);
     font-weight: bold;
     text-decoration: none;
 }
