@@ -3,48 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - My Tech Blog</title>
+    <title>Projects - My Tech Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <nav class="top-nav">
-            <h1 id="name" class="bot-border">Mina Hermina</h1>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="articles.html">Articles</a>
-                </li>
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-            </ul>
-        </nav>
+    <nav class="top-nav">
+        <h1 id="name" class="bot-border">Mina Hermina</h1>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+        </ul>
+    </nav>
 
     <div class="main-content">
         <div class="container">
             <header>
-                <h1 class="bot-border">Articles</h1>
+                <h1 class="bot-border">Projects</h1>
             </header>
 
             <main>
-                    <!-- New Article -->
-                    <section class="article-summary">
-                        <h2>My Journey from Linux Novice to Arch Linux Enthusiast</h2>
-                        <ul >
-                            <li >Posted May 29, 2024</li>
-                            <li >5 min read</li>
+                <!-- Arena Allocator Project -->
+                <section class="project-summary">
+                    <h2>Arena Allocator</h2>
+                    <div class="project-meta">
+                        <span class="tech-stack">C • Memory Management • mmap • Systems Programming</span>
+                        <span class="project-date">February 2025 – March 2025</span>
+                        </div>
+                        <ul style="font-size: 1.2rem;">
+                            <li>
+                                A high-performance memory allocator built from scratch using low-level system calls.
+                            </li> 
+                            <li>
+                                A stb-style single-header library provides fast region-based allocation with page alignment.
+                            </li>
                         </ul>
-                        <p>Nine months ago, I knew nothing about Linux. Follow my journey from Ubuntu to Arch Linux, discovering the power of customization, the DWM window manager, and taking complete control of my system.</p>
-                        <a
-                            href="article1.html"
-                            class="read-more"
-                            target="_blank"
-                            rel="noopener noreferrer" >
-                            Read More →
+                    <div class="project-links">
+                        <a href="https://github.com/minahermina/arena-allocator" 
+                           class="btn btn-primary" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            View Source →
                         </a>
-                    </section>
+                    </div>
+                </section>
+
+                <!-- imglib Project -->
+                <section class="project-summary">
+                    <h2>imglib</h2>
+                    <div class="project-meta">
+                        <span class="tech-stack">C • Image Processing • Unix • Portable Programming</span>
+                        <span class="project-date">November 2024 – January 2025</span>
+                    </div>
+                        <ul style="font-size: 1.2rem;">
+                            <li>
+                                A minimal image processing library created for Unix systems with zero dependencies. 
+                            </li> 
+                            <li>
+                                Built with portable C code and efficient memory access patterns. 
+                            </li>
+                            <li>
+                                Followed the Suckless C coding style and wrote a portable Makefile, avoiding GNU-specific extensions.
+                            </li>
+                        </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/minahermina/imglib" 
+                           class="btn btn-primary" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            View Source →
+                        </a>
+                    </div>
+                </section>
             </main>
         </div>
     </div>
